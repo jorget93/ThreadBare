@@ -1,0 +1,34 @@
+Thread One:
+Experiment one - The three threads are started gradually and count down from from 5.
+The limit (sleep time) given gives the threads enough time to exit before the main
+thread since it sleeps for 10 seconds while the threads count down.
+
+Experiment two - Same as Experiment one but with a shorter limit thus causing the main
+to exit before the other three. The main exits but since the other threads continue to
+run individually the count down continues into experiment 3.
+
+Experiment three - Same as experiment two but now the main has a way shorter sleep
+so it exits right after the threads from experiment two. The remaining threads continue
+iterating until they are finished with their cycles.
+
+
+
+Thread Two: In this experiment all four threads are started still started gradually but
+in between the start method so the difference goes unnoticed. They then sleep for 5 seconds
+before exiting.
+
+
+
+Thread Two Array: Creates an array of 10 threads that start one after the other an then
+starts an array of 20 threads they all ends at different points in time due to the sleep
+time given.
+
+
+
+Thread Two HashMap: Runs a HashMap of threads that don't start in order since the threads
+in the map are stored based off of their Hash id rather than their name and exit based on
+the same logic.
+
+
+
+Thread Two HashMap Broken: The thread
